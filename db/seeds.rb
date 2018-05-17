@@ -5,3 +5,21 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+10.times do
+  5.times do
+    newStr = ""
+    newStr << Faker::RickAndMorty.quote + ", "
+    newStr << "\n\n"
+  end
+
+
+project = Project.new({
+  name: Faker::Overwatch.hero,
+  description: Faker::RickAndMorty.quote,
+  img_url: Faker::Fillmurray.image,
+  type: ,
+  url: nil,
+  })
+
+end
